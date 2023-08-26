@@ -1,6 +1,6 @@
-export default function fetchWeatherData(city) {
+function fetchWeatherData(location) {
   const response = fetch(
-    `https://api.weatherapi.com/v1/current.json?key=3695df83e057409d9f852317232008&q=${city}`,
+    `https://api.weatherapi.com/v1/current.json?key=3695df83e057409d9f852317232008&q=${location}`,
     {
       mode: "cors",
     },
@@ -22,5 +22,10 @@ export default function fetchWeatherData(city) {
       return reason.message;
     });
 
+  return weatherData;
+}
+
+export default function searchWeatherForLocation(location) {
+  const weatherData = fetchWeatherData(location);
   return weatherData;
 }
