@@ -136,7 +136,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ searchWeatherForLocation)\n/* harmony export */ });\nfunction fetchWeatherData(location) {\n  const response = fetch(\n    `https://api.weatherapi.com/v1/current.json?key=3695df83e057409d9f852317232008&q=${location}`,\n    {\n      mode: \"cors\",\n    },\n  );\n  const weatherData = response\n    .then((response) => {\n      if (response.ok) {\n        return response.json();\n      } else {\n        throw new Error(\n          `Unexpected status code: ${response.status} ${response.statusText}`,\n        );\n      }\n    })\n    .then((response) => {\n      return response;\n    })\n    .catch((reason) => {\n      return reason.message;\n    });\n\n  return weatherData;\n}\n\nfunction searchWeatherForLocation(location) {\n  const weatherData = fetchWeatherData(location);\n  return weatherData;\n}\n\n\n//# sourceURL=webpack://odin-weather-app/./src/getWeatherData.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ searchWeatherForLocation)\n/* harmony export */ });\n/* harmony import */ var _renderPage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./renderPage */ \"./src/renderPage.js\");\n\n\nfunction fetchWeatherData(location) {\n  const response = fetch(\n    `https://api.weatherapi.com/v1/current.json?key=3695df83e057409d9f852317232008&q=${location}`,\n    {\n      mode: \"cors\",\n    },\n  );\n  const weatherData = response\n    .then((response) => {\n      if (response.ok) {\n        return response.json();\n      } else {\n        throw new Error(\n          `Unexpected status code: ${response.status} ${response.statusText}`,\n        );\n      }\n    })\n    .then((response) => {\n      return response;\n    })\n    .catch((reason) => {\n      return reason.message;\n    });\n\n  return weatherData;\n}\n\nfunction searchWeatherForLocation(location) {\n  const weatherData = fetchWeatherData(location);\n  (0,_renderPage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(weatherData);\n}\n\n\n//# sourceURL=webpack://odin-weather-app/./src/getWeatherData.js?");
 
 /***/ }),
 
@@ -146,7 +146,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _getWeatherData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getWeatherData */ \"./src/getWeatherData.js\");\n/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n\n\n\n\nconst form = document.querySelector(\"form\");\nform.addEventListener(\"submit\", (event) => {\n  event.preventDefault();\n  const location = document.getElementById(\"location\").value;\n  console.log((0,_getWeatherData__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(location));\n});\n\n\n//# sourceURL=webpack://odin-weather-app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _getWeatherData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getWeatherData */ \"./src/getWeatherData.js\");\n/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! normalize.css */ \"./node_modules/normalize.css/normalize.css\");\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n\n\n\n\nconst form = document.querySelector(\"form\");\nform.addEventListener(\"submit\", (event) => {\n  event.preventDefault();\n  const location = document.getElementById(\"location\").value;\n  (0,_getWeatherData__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(location);\n});\n\n\n//# sourceURL=webpack://odin-weather-app/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/renderPage.js":
+/*!***************************!*\
+  !*** ./src/renderPage.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderPageWithWeatherData)\n/* harmony export */ });\nfunction renderPageWithWeatherData(weather) {\n  console.log(weather);\n}\n\n\n//# sourceURL=webpack://odin-weather-app/./src/renderPage.js?");
 
 /***/ })
 

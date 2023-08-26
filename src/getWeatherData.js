@@ -1,3 +1,5 @@
+import renderPageWithWeatherData from "./renderPage";
+
 function fetchWeatherData(location) {
   const response = fetch(
     `https://api.weatherapi.com/v1/current.json?key=3695df83e057409d9f852317232008&q=${location}`,
@@ -27,5 +29,5 @@ function fetchWeatherData(location) {
 
 export default function searchWeatherForLocation(location) {
   const weatherData = fetchWeatherData(location);
-  return weatherData;
+  renderPageWithWeatherData(weatherData);
 }
