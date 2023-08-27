@@ -83,12 +83,6 @@ p {
     width: 100px;
     height: 100px;
 }
-.icon.inactive {
-    display: none;
-}
-.icon.active {
-    display: block;
-}
 .condition {
     text-align: center;
     color: #3e3e3e;

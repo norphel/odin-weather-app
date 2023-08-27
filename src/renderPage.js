@@ -9,47 +9,63 @@ export default function renderPageWithWeatherData(weatherData) {
 }
 
 function displayMainResults(weather) {
-  const city = document.querySelector(".city");
-  const country = document.querySelector(".country");
-  const dateTime = document.querySelector(".date-time");
-  const temp = document.querySelector(".temp");
-  const weatherIcon = document.querySelector(".icon");
-  const condition = document.querySelector(".condition");
-  const feelsLike = document.querySelector(".feels-like");
+  console.log(weather);
+
+  const mainResults = document.getElementById("mainResults");
 
   if (weather === "Error") {
-    city.textContent = "";
-    city.textContent = "Location Not Found!!";
-    country.textContent = "";
-    dateTime.textContent = "";
-    temp.textContent = "";
-    weatherIcon.classList.remove("active");
-    weatherIcon.classList.add("inactive");
-    weatherIcon.src = "";
-    condition.textContent = "";
-    feelsLike.textContent = "";
+    mainResults.innerHTML = "";
+    mainResults.textContent = "Location Not Found";
   } else {
-    city.textContent = "";
-    city.textContent = weather.location.name;
+    mainResults.innerHTML = "";
 
-    country.textContent = "";
+    const location = document.createElement("div");
+    location.classList.add("location");
+    const city = document.createElement("p");
+    city.classList.add("city");
+    city.textContent = weather.location.name;
+    const country = document.createElement("p");
+    country.classList.add("country");
     country.textContent = weather.location.country;
 
-    dateTime.textContent = "";
+    location.appendChild(city);
+    location.appendChild(country);
+
+    const dateTime = document.createElement("p");
+    dateTime.classList.add("date-time");
     dateTime.textContent = weather.location.localtime;
 
-    temp.textContent = "";
+    const tempIcon = document.createElement("div");
+    tempIcon.classList.add("temp-icon");
+    const temp = document.createElement("p");
+    temp.classList.add("temp");
     temp.textContent = weather.current.temp_c;
 
-    weatherIcon.classList.remove("inactive");
-    weatherIcon.classList.add("active");
-    weatherIcon.src = "";
-    weatherIcon.src = weather.current.condition.icon;
+    const iconCondition = document.createElement("div");
+    iconCondition.classList.add("icon-condition");
 
-    condition.textContent = "";
+    const weatherIcon = document.createElement("img");
+    weatherIcon.setAttribute("alt", "weather icon");
+    weatherIcon.classList.add("icon");
+    weatherIcon.setAttribute("src", `${weather.current.condition.icon}`);
+
+    const condition = document.createElement("p");
+    condition.classList.add("condition");
     condition.textContent = weather.current.condition.text;
 
-    feelsLike.textContent = "";
+    iconCondition.appendChild(weatherIcon);
+    iconCondition.appendChild(condition);
+
+    tempIcon.appendChild(temp);
+    tempIcon.appendChild(iconCondition);
+
+    const feelsLike = document.createElement("p");
+    feelsLike.classList.add("feels-like");
     feelsLike.textContent = `Feels like: ${weather.current.feelslike_c}`;
+
+    mainResults.appendChild(location);
+    mainResults.appendChild(dateTime);
+    mainResults.appendChild(tempIcon);
+    mainResults.appendChild(feelsLike);
   }
 }
