@@ -41,9 +41,11 @@ main {
     grid-template-rows: 2fr 1.5fr;
 }
 main > div {
-    border-radius: 1rem;
-    border: 1px solid black;
     padding: 1rem;
+}
+main>div.active {
+    border-radius: 1rem;
+    box-shadow: 8px 2px 20px rgba(0, 0, 0, 0.2);
 }
 p {
     padding: 0;
@@ -94,4 +96,24 @@ p {
 main >div:last-child {
     grid-column-start: 1;
     grid-column-end: -1;
+}
+#otherResults {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#otherResults > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+#otherResults>div>p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#otherResults>div>p:last-child {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 183);
 }

@@ -1,16 +1,21 @@
+import precipitationIcon from "./assets/precipitation.png";
+import humidityIcon from "./assets/humidity.png";
+import windSpeedIcon from "./assets/wind.png";
+import windDirectionIcon from "./assets/windDirection.png";
+
 export default function renderPageWithWeatherData(weatherData) {
   weatherData.then((weather) => {
     if (weather.current === undefined || weather.location === undefined) {
       displayMainResults("Error");
+      displayOtherResults("Error");
     } else {
       displayMainResults(weather);
+      displayOtherResults(weather);
     }
   });
 }
 
 function displayMainResults(weather) {
-  console.log(weather);
-
   const mainResults = document.getElementById("mainResults");
 
   if (weather === "Error") {
@@ -18,6 +23,7 @@ function displayMainResults(weather) {
     mainResults.textContent = "Location Not Found";
   } else {
     mainResults.innerHTML = "";
+    mainResults.classList.add("active");
 
     const location = document.createElement("div");
     location.classList.add("location");
@@ -68,4 +74,81 @@ function displayMainResults(weather) {
     mainResults.appendChild(tempIcon);
     mainResults.appendChild(feelsLike);
   }
+}
+
+function displayOtherResults(weather) {
+  const otherResults = document.getElementById("otherResults");
+  if (weather === "Error") {
+    otherResults.innerHTML = "";
+    otherResults.classList.remove("active");
+  } else {
+    otherResults.innerHTML = "";
+    otherResults.classList.add("active");
+
+    const precipitation = document.createElement("div");
+    precipitation.classList.add("precipitation");
+    const prepTitle = document.createElement("p");
+    prepTitle.textContent = "Precipitation (mm)";
+    const prepIcon = document.createElement("img");
+    prepIcon.classList.add("icon");
+    prepIcon.setAttribute("alt", "precipitation icon");
+    prepIcon.setAttribute("src", `${precipitationIcon}`);
+    const prepmm = document.createElement("p");
+    prepmm.textContent = weather.current.precip_mm;
+
+    precipitation.appendChild(prepTitle);
+    precipitation.appendChild(prepIcon);
+    precipitation.appendChild(prepmm);
+
+    const humidity = document.createElement("div");
+    humidity.classList.add("humidity");
+    const humidityTitle = document.createElement("p");
+    humidityTitle.textContent = "Humidity";
+    const humidIcon = document.createElement("img");
+    humidIcon.classList.add("icon");
+    humidIcon.setAttribute("alt", "humidity icon");
+    humidIcon.setAttribute("src", `${humidityIcon}`);
+    const humidPercent = document.createElement("p");
+    humidPercent.textContent = weather.current.humidity;
+
+    humidity.appendChild(humidityTitle);
+    humidity.appendChild(humidIcon);
+    humidity.appendChild(humidPercent);
+
+    const windSpeed = document.createElement("div");
+    windSpeed.classList.add("wind-speed");
+    const windSpeedTitle = document.createElement("p");
+    windSpeedTitle.textContent = "Wind Speed (kph)";
+    const windIcon = document.createElement("img");
+    windIcon.classList.add("icon");
+    windIcon.setAttribute("alt", "wind speed icon");
+    windIcon.setAttribute("src", `${windSpeedIcon}`);
+    const windSpeedkph = document.createElement("p");
+    windSpeedkph.textContent = weather.current.wind_kph;
+
+    windSpeed.appendChild(windSpeedTitle);
+    windSpeed.appendChild(windIcon);
+    windSpeed.appendChild(windSpeedkph);
+
+    const windDirection = document.createElement("div");
+    windDirection.classList.add("wind-direction");
+    const windDirectionTitle = document.createElement("p");
+    windDirectionTitle.textContent = "Wind Direction";
+    const windDirIcon = document.createElement("img");
+    windDirIcon.classList.add("icon");
+    windDirIcon.setAttribute("alt", "wind direction icon");
+    windDirIcon.setAttribute("src", `${windDirectionIcon}`);
+    const windDir = document.createElement("p");
+    windDir.textContent = weather.current.wind_dir;
+
+    windDirection.appendChild(windDirectionTitle);
+    windDirection.appendChild(windDirIcon);
+    windDirection.appendChild(windDir);
+
+    otherResults.appendChild(precipitation);
+    otherResults.appendChild(humidity);
+    otherResults.appendChild(windSpeed);
+    otherResults.appendChild(windDirection);
+  }
+  console.log(weather);
 }

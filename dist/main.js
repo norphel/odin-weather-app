@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 20% 80%;\n    min-height: 100vh;\n    font-family: Arial, Helvetica, sans-serif;\n}\nh1 {\n    font-weight: bold;\n    font-size: 2.5rem;\n    text-align: center;\n}\nform {\n    display: flex;\n    justify-content: center;\n    gap: 0;\n}\ninput {\n    border-radius: 10px 0 0 10px;\n    border-color:  #808080;\n    border-right: none;\n    background-color: #f5f5f5;\n    width: 15rem;\n    height: 1.5rem;\n    padding: 0.2rem 1rem;\n}\n.search {\n    background-color: green;\n    color: #ffffff;\n    font-weight: bold;\n    border: none;\n    border-radius: 0 10px 10px 0;\n    padding: 0.2rem 1rem;\n}\n\nmain {\n    padding: 2rem 4rem;\n    gap: 2rem;\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: 2fr 1.5fr;\n}\nmain > div {\n    border-radius: 1rem;\n    border: 1px solid black;\n    padding: 1rem;\n}\np {\n    padding: 0;\n    margin: 0;\n}\n.city {\n    padding-top: 1rem;\n    font-weight: bold;\n    font-size: 1.8rem;\n}\n.country {\n    font-weight: 100;\n    font-size: 0.8rem;\n    color: #3e3e3e;\n}\n.date-time {\n    padding-top: 1rem;\n    color: #3e3e3e;\n    font-size: 1.2rem;\n}\n.temp-icon {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n.temp {\n    padding: 1rem 0;\n    font-weight: bold;\n    font-size: 4rem;\n}\n.icon-condition {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.icon {\n    width: 100px;\n    height: 100px;\n}\n.condition {\n    text-align: center;\n    color: #3e3e3e;\n}\n.feels-like {\n    padding-top: 1rem;\n    font-weight: 0.8rem;\n}\nmain >div:last-child {\n    grid-column-start: 1;\n    grid-column-end: -1;\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-weather-app/./src/styles/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `body {\n    display: grid;\n    grid-template-columns: 1fr;\n    grid-template-rows: 20% 80%;\n    min-height: 100vh;\n    font-family: Arial, Helvetica, sans-serif;\n}\nh1 {\n    font-weight: bold;\n    font-size: 2.5rem;\n    text-align: center;\n}\nform {\n    display: flex;\n    justify-content: center;\n    gap: 0;\n}\ninput {\n    border-radius: 10px 0 0 10px;\n    border-color:  #808080;\n    border-right: none;\n    background-color: #f5f5f5;\n    width: 15rem;\n    height: 1.5rem;\n    padding: 0.2rem 1rem;\n}\n.search {\n    background-color: green;\n    color: #ffffff;\n    font-weight: bold;\n    border: none;\n    border-radius: 0 10px 10px 0;\n    padding: 0.2rem 1rem;\n}\n\nmain {\n    padding: 2rem 4rem;\n    gap: 2rem;\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    grid-template-rows: 2fr 1.5fr;\n}\nmain > div {\n    padding: 1rem;\n}\nmain>div.active {\n    border-radius: 1rem;\n    box-shadow: 8px 2px 20px rgba(0, 0, 0, 0.2);\n}\np {\n    padding: 0;\n    margin: 0;\n}\n.city {\n    padding-top: 1rem;\n    font-weight: bold;\n    font-size: 1.8rem;\n}\n.country {\n    font-weight: 100;\n    font-size: 0.8rem;\n    color: #3e3e3e;\n}\n.date-time {\n    padding-top: 1rem;\n    color: #3e3e3e;\n    font-size: 1.2rem;\n}\n.temp-icon {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n.temp {\n    padding: 1rem 0;\n    font-weight: bold;\n    font-size: 4rem;\n}\n.icon-condition {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.icon {\n    width: 100px;\n    height: 100px;\n}\n.condition {\n    text-align: center;\n    color: #3e3e3e;\n}\n.feels-like {\n    padding-top: 1rem;\n    font-weight: 0.8rem;\n}\nmain >div:last-child {\n    grid-column-start: 1;\n    grid-column-end: -1;\n}\n#otherResults {\n    display: flex;\n    align-items: center;\n    justify-content: space-evenly;\n}\n#otherResults > div {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1rem;\n}\n#otherResults>div>p:first-child {\n    font-weight: bold;\n    font-size: 1.2rem;\n}\n#otherResults>div>p:last-child {\n    font-weight: bold;\n    font-size: 1.5rem;\n    color: rgb(0, 0, 183);\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://odin-weather-app/./src/styles/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -156,7 +156,47 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _get
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderPageWithWeatherData)\n/* harmony export */ });\nfunction renderPageWithWeatherData(weatherData) {\n  weatherData.then((weather) => {\n    if (weather.current === undefined || weather.location === undefined) {\n      displayMainResults(\"Error\");\n    } else {\n      displayMainResults(weather);\n    }\n  });\n}\n\nfunction displayMainResults(weather) {\n  console.log(weather);\n\n  const mainResults = document.getElementById(\"mainResults\");\n\n  if (weather === \"Error\") {\n    mainResults.innerHTML = \"\";\n    mainResults.textContent = \"Location Not Found\";\n  } else {\n    mainResults.innerHTML = \"\";\n\n    const location = document.createElement(\"div\");\n    location.classList.add(\"location\");\n    const city = document.createElement(\"p\");\n    city.classList.add(\"city\");\n    city.textContent = weather.location.name;\n    const country = document.createElement(\"p\");\n    country.classList.add(\"country\");\n    country.textContent = weather.location.country;\n\n    location.appendChild(city);\n    location.appendChild(country);\n\n    const dateTime = document.createElement(\"p\");\n    dateTime.classList.add(\"date-time\");\n    dateTime.textContent = weather.location.localtime;\n\n    const tempIcon = document.createElement(\"div\");\n    tempIcon.classList.add(\"temp-icon\");\n    const temp = document.createElement(\"p\");\n    temp.classList.add(\"temp\");\n    temp.textContent = weather.current.temp_c;\n\n    const iconCondition = document.createElement(\"div\");\n    iconCondition.classList.add(\"icon-condition\");\n\n    const weatherIcon = document.createElement(\"img\");\n    weatherIcon.setAttribute(\"alt\", \"weather icon\");\n    weatherIcon.classList.add(\"icon\");\n    weatherIcon.setAttribute(\"src\", `${weather.current.condition.icon}`);\n\n    const condition = document.createElement(\"p\");\n    condition.classList.add(\"condition\");\n    condition.textContent = weather.current.condition.text;\n\n    iconCondition.appendChild(weatherIcon);\n    iconCondition.appendChild(condition);\n\n    tempIcon.appendChild(temp);\n    tempIcon.appendChild(iconCondition);\n\n    const feelsLike = document.createElement(\"p\");\n    feelsLike.classList.add(\"feels-like\");\n    feelsLike.textContent = `Feels like: ${weather.current.feelslike_c}`;\n\n    mainResults.appendChild(location);\n    mainResults.appendChild(dateTime);\n    mainResults.appendChild(tempIcon);\n    mainResults.appendChild(feelsLike);\n  }\n}\n\n\n//# sourceURL=webpack://odin-weather-app/./src/renderPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderPageWithWeatherData)\n/* harmony export */ });\n/* harmony import */ var _assets_precipitation_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/precipitation.png */ \"./src/assets/precipitation.png\");\n/* harmony import */ var _assets_humidity_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/humidity.png */ \"./src/assets/humidity.png\");\n/* harmony import */ var _assets_wind_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/wind.png */ \"./src/assets/wind.png\");\n/* harmony import */ var _assets_windDirection_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./assets/windDirection.png */ \"./src/assets/windDirection.png\");\n\n\n\n\n\nfunction renderPageWithWeatherData(weatherData) {\n  weatherData.then((weather) => {\n    if (weather.current === undefined || weather.location === undefined) {\n      displayMainResults(\"Error\");\n      displayOtherResults(\"Error\");\n    } else {\n      displayMainResults(weather);\n      displayOtherResults(weather);\n    }\n  });\n}\n\nfunction displayMainResults(weather) {\n  const mainResults = document.getElementById(\"mainResults\");\n\n  if (weather === \"Error\") {\n    mainResults.innerHTML = \"\";\n    mainResults.textContent = \"Location Not Found\";\n  } else {\n    mainResults.innerHTML = \"\";\n    mainResults.classList.add(\"active\");\n\n    const location = document.createElement(\"div\");\n    location.classList.add(\"location\");\n    const city = document.createElement(\"p\");\n    city.classList.add(\"city\");\n    city.textContent = weather.location.name;\n    const country = document.createElement(\"p\");\n    country.classList.add(\"country\");\n    country.textContent = weather.location.country;\n\n    location.appendChild(city);\n    location.appendChild(country);\n\n    const dateTime = document.createElement(\"p\");\n    dateTime.classList.add(\"date-time\");\n    dateTime.textContent = weather.location.localtime;\n\n    const tempIcon = document.createElement(\"div\");\n    tempIcon.classList.add(\"temp-icon\");\n    const temp = document.createElement(\"p\");\n    temp.classList.add(\"temp\");\n    temp.textContent = weather.current.temp_c;\n\n    const iconCondition = document.createElement(\"div\");\n    iconCondition.classList.add(\"icon-condition\");\n\n    const weatherIcon = document.createElement(\"img\");\n    weatherIcon.setAttribute(\"alt\", \"weather icon\");\n    weatherIcon.classList.add(\"icon\");\n    weatherIcon.setAttribute(\"src\", `${weather.current.condition.icon}`);\n\n    const condition = document.createElement(\"p\");\n    condition.classList.add(\"condition\");\n    condition.textContent = weather.current.condition.text;\n\n    iconCondition.appendChild(weatherIcon);\n    iconCondition.appendChild(condition);\n\n    tempIcon.appendChild(temp);\n    tempIcon.appendChild(iconCondition);\n\n    const feelsLike = document.createElement(\"p\");\n    feelsLike.classList.add(\"feels-like\");\n    feelsLike.textContent = `Feels like: ${weather.current.feelslike_c}`;\n\n    mainResults.appendChild(location);\n    mainResults.appendChild(dateTime);\n    mainResults.appendChild(tempIcon);\n    mainResults.appendChild(feelsLike);\n  }\n}\n\nfunction displayOtherResults(weather) {\n  const otherResults = document.getElementById(\"otherResults\");\n  if (weather === \"Error\") {\n    otherResults.innerHTML = \"\";\n    otherResults.classList.remove(\"active\");\n  } else {\n    otherResults.innerHTML = \"\";\n    otherResults.classList.add(\"active\");\n\n    const precipitation = document.createElement(\"div\");\n    precipitation.classList.add(\"precipitation\");\n    const prepTitle = document.createElement(\"p\");\n    prepTitle.textContent = \"Precipitation (mm)\";\n    const prepIcon = document.createElement(\"img\");\n    prepIcon.classList.add(\"icon\");\n    prepIcon.setAttribute(\"alt\", \"precipitation icon\");\n    prepIcon.setAttribute(\"src\", `${_assets_precipitation_png__WEBPACK_IMPORTED_MODULE_0__}`);\n    const prepmm = document.createElement(\"p\");\n    prepmm.textContent = weather.current.precip_mm;\n\n    precipitation.appendChild(prepTitle);\n    precipitation.appendChild(prepIcon);\n    precipitation.appendChild(prepmm);\n\n    const humidity = document.createElement(\"div\");\n    humidity.classList.add(\"humidity\");\n    const humidityTitle = document.createElement(\"p\");\n    humidityTitle.textContent = \"Humidity\";\n    const humidIcon = document.createElement(\"img\");\n    humidIcon.classList.add(\"icon\");\n    humidIcon.setAttribute(\"alt\", \"humidity icon\");\n    humidIcon.setAttribute(\"src\", `${_assets_humidity_png__WEBPACK_IMPORTED_MODULE_1__}`);\n    const humidPercent = document.createElement(\"p\");\n    humidPercent.textContent = weather.current.humidity;\n\n    humidity.appendChild(humidityTitle);\n    humidity.appendChild(humidIcon);\n    humidity.appendChild(humidPercent);\n\n    const windSpeed = document.createElement(\"div\");\n    windSpeed.classList.add(\"wind-speed\");\n    const windSpeedTitle = document.createElement(\"p\");\n    windSpeedTitle.textContent = \"Wind Speed (kph)\";\n    const windIcon = document.createElement(\"img\");\n    windIcon.classList.add(\"icon\");\n    windIcon.setAttribute(\"alt\", \"wind speed icon\");\n    windIcon.setAttribute(\"src\", `${_assets_wind_png__WEBPACK_IMPORTED_MODULE_2__}`);\n    const windSpeedkph = document.createElement(\"p\");\n    windSpeedkph.textContent = weather.current.wind_kph;\n\n    windSpeed.appendChild(windSpeedTitle);\n    windSpeed.appendChild(windIcon);\n    windSpeed.appendChild(windSpeedkph);\n\n    const windDirection = document.createElement(\"div\");\n    windDirection.classList.add(\"wind-direction\");\n    const windDirectionTitle = document.createElement(\"p\");\n    windDirectionTitle.textContent = \"Wind Direction\";\n    const windDirIcon = document.createElement(\"img\");\n    windDirIcon.classList.add(\"icon\");\n    windDirIcon.setAttribute(\"alt\", \"wind direction icon\");\n    windDirIcon.setAttribute(\"src\", `${_assets_windDirection_png__WEBPACK_IMPORTED_MODULE_3__}`);\n    const windDir = document.createElement(\"p\");\n    windDir.textContent = weather.current.wind_dir;\n\n    windDirection.appendChild(windDirectionTitle);\n    windDirection.appendChild(windDirIcon);\n    windDirection.appendChild(windDir);\n\n    otherResults.appendChild(precipitation);\n    otherResults.appendChild(humidity);\n    otherResults.appendChild(windSpeed);\n    otherResults.appendChild(windDirection);\n  }\n  console.log(weather);\n}\n\n\n//# sourceURL=webpack://odin-weather-app/./src/renderPage.js?");
+
+/***/ }),
+
+/***/ "./src/assets/humidity.png":
+/*!*********************************!*\
+  !*** ./src/assets/humidity.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"40bdb8e36951f8e96a6f.png\";\n\n//# sourceURL=webpack://odin-weather-app/./src/assets/humidity.png?");
+
+/***/ }),
+
+/***/ "./src/assets/precipitation.png":
+/*!**************************************!*\
+  !*** ./src/assets/precipitation.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1ecaded46b131b88476c.png\";\n\n//# sourceURL=webpack://odin-weather-app/./src/assets/precipitation.png?");
+
+/***/ }),
+
+/***/ "./src/assets/wind.png":
+/*!*****************************!*\
+  !*** ./src/assets/wind.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"09f8e92b3d6dfbeda83b.png\";\n\n//# sourceURL=webpack://odin-weather-app/./src/assets/wind.png?");
+
+/***/ }),
+
+/***/ "./src/assets/windDirection.png":
+/*!**************************************!*\
+  !*** ./src/assets/windDirection.png ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"16767e019b661ce7b39d.png\";\n\n//# sourceURL=webpack://odin-weather-app/./src/assets/windDirection.png?");
 
 /***/ })
 
@@ -211,6 +251,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -225,6 +277,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
